@@ -28,12 +28,64 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
-			this.Text = "Wardrobe";
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Wardrobe));
+			label3 = new Label();
+			pictureBox1 = new PictureBox();
+			panel1 = new Panel();
+			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+			panel1.SuspendLayout();
+			SuspendLayout();
+			// 
+			// label3
+			// 
+			label3.AutoSize = true;
+			label3.BackColor = Color.FromArgb(68, 68, 68);
+			label3.Font = new Font("Dosis", 22.125F, FontStyle.Regular, GraphicsUnit.Point);
+			label3.ForeColor = Color.White;
+			label3.Location = new Point(1554, 78);
+			label3.Name = "label3";
+			label3.Size = new Size(257, 80);
+			label3.TabIndex = 3;
+			label3.Text = "Wardrobe";
+			// 
+			// pictureBox1
+			// 
+			pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+			pictureBox1.Location = new Point(82, 72);
+			pictureBox1.Name = "pictureBox1";
+			pictureBox1.Size = new Size(200, 100);
+			pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+			pictureBox1.TabIndex = 0;
+			pictureBox1.TabStop = false;
+			// 
+			// panel1
+			// 
+			panel1.BackColor = Color.FromArgb(68, 68, 68);
+			panel1.Controls.Add(label3);
+			panel1.Controls.Add(pictureBox1);
+			panel1.Location = new Point(-4, -1);
+			panel1.Name = "panel1";
+			panel1.Size = new Size(1932, 220);
+			panel1.TabIndex = 1;
+			// 
+			// Wardrobe
+			// 
+			AutoScaleDimensions = new SizeF(13F, 32F);
+			AutoScaleMode = AutoScaleMode.Font;
+			ClientSize = new Size(1894, 1009);
+			Controls.Add(panel1);
+			Name = "Wardrobe";
+			Text = "Wardrobe";
+			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+			panel1.ResumeLayout(false);
+			panel1.PerformLayout();
+			ResumeLayout(false);
 		}
 
 		#endregion
+
+		private Label label3;
+		private PictureBox pictureBox1;
+		private Panel panel1;
 	}
 }

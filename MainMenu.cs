@@ -21,5 +21,19 @@ namespace Ofinger
 		{
 
 		}
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			new Outfits().ShowDialog();
+			this.Close();
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			new Wardrobe().ShowDialog();
+			this.Close();
+		}
 	}
 }

@@ -114,6 +114,7 @@
 			button1.TabIndex = 3;
 			button1.Text = "OPEN";
 			button1.UseVisualStyleBackColor = false;
+			button1.Click += button1_Click;
 			// 
 			// button2
 			// 
@@ -126,6 +127,7 @@
 			button2.TabIndex = 6;
 			button2.Text = "OPEN";
 			button2.UseVisualStyleBackColor = false;
+			button2.Click += button2_Click;
 			// 
 			// label2
 			// 
