@@ -32,6 +32,7 @@
 			label3 = new Label();
 			pictureBox1 = new PictureBox();
 			panel1 = new Panel();
+			wardrobeMainMenu1 = new WardrobeMainMenu();
 			((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
 			panel1.SuspendLayout();
 			SuspendLayout();
@@ -68,13 +69,22 @@
 			panel1.Size = new Size(1932, 220);
 			panel1.TabIndex = 1;
 			// 
+			// wardrobeMainMenu1
+			// 
+			wardrobeMainMenu1.Location = new Point(5, 224);
+			wardrobeMainMenu1.Name = "wardrobeMainMenu1";
+			wardrobeMainMenu1.Size = new Size(3800, 1600);
+			wardrobeMainMenu1.TabIndex = 2;
+			// 
 			// Wardrobe
 			// 
 			AutoScaleDimensions = new SizeF(13F, 32F);
 			AutoScaleMode = AutoScaleMode.Font;
 			ClientSize = new Size(1894, 1009);
+			Controls.Add(wardrobeMainMenu1);
 			Controls.Add(panel1);
 			Name = "Wardrobe";
+			StartPosition = FormStartPosition.CenterScreen;
 			Text = "Wardrobe";
 			((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
 			panel1.ResumeLayout(false);
@@ -87,5 +97,6 @@
 		private Label label3;
 		private PictureBox pictureBox1;
 		private Panel panel1;
+		private WardrobeMainMenu wardrobeMainMenu1;
 	}
 }
