@@ -16,5 +16,21 @@ namespace Ofinger
 		{
 			InitializeComponent();
 		}
+
+		private void pictureBox2_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+
+		}
+
+		private void pictureBox5_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+		}
+
+		private void label1_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+		}
 	}
 }
