@@ -12,15 +12,16 @@ namespace Ofinger
 {
 	public partial class WardrobeMainMenu : UserControl
 	{
+		Database db;
 		public WardrobeMainMenu()
 		{
 			InitializeComponent();
+			db = new Database();
 		}
 
 		private void pictureBox2_Click(object sender, EventArgs e)
 		{
 			this.Hide();
-
 		}
 
 		private void pictureBox5_Click(object sender, EventArgs e)
@@ -31,6 +32,9 @@ namespace Ofinger
 		private void label1_Click(object sender, EventArgs e)
 		{
 			this.Hide();
+			db.OpenConnection();
+			db.GetConnection();
+			db.CloseConnection();
 		}
 	}
 }
